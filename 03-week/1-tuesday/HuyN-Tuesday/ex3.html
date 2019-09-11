@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Border Box</title>
+    <style>
+    .main{
+        position: relative;
+        background-color: black;
+        border: 3px solid rgb(19, 17, 17);
+        width: 100%;
+        height: 100vh;
+    }
+        .absolute { 
+        position: absolute;
+        background-color: blue;
+        top: 8px;
+        left: 8px;
+        bottom: 50%;
+        border: 3px solid blue;
+        width: 35%;
+        height: 100vh; 
+    }
+        .thirdrow{
+        position: absolute;
+        background-color: rgb(223, 223, 241);
+        top: 8px;
+        left: 36%;
+        width: 40%;
+        height:101vh;
+      }
+      .fourthrow{
+        position: absolute;
+        background-color: rgb(40, 185, 154);
+        top: 8px;
+        left: 65%;
+        width: 35%;
+        height:101vh;
+      }
+      .horizontal1{
+        position: absolute;
+        background-color: rgb(218, 29, 145);
+        top: 8px;
+        height:35%;
+        width: 100%;
+       
+      }
+      .horizontal2 {
+        position: absolute;
+        background-color: #d7da1d;
+        top: 73%;
+        height:35%;
+        width: 100%;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div class="main">main</div>
+    <div class="fourthrow">fourth</div>
+    <div class="absolute">absolute</div>
+    <div class="horizontal2">h2</div>
+    <div class="horizontal1">h1</div>
+    <div class="thirdrow">third</div>
+    
+  </body>
+</html>
+
