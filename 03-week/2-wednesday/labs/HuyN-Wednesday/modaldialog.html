@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    body{
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        line-height: 1.9;
+        width: 800px;
+        height: 700px
+    }
+.modal-dialog{
+    display: inline;
+    position: absolute;
+    z-index: 9999;
+    padding-top: 30px;
+    left: 30%;
+    top: 40%;
+    width: 30%;
+    height: 20%;
+    background: rgba(0,0,0,0.8);
+    background-color: white;
+    border: 2px solid black;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+.modal-header{
+    position:absolute;
+}
+.modal-title{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.modal-content{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.modal-buttons{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.modal-dialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+</style>
+</head>
+<body>
+    <div class="modal-dialog">
+        <div class="modal-header"> 
+            <label class="modal-title">Hello</label> 
+            </div> 
+        <div class="modal-content"> 
+        <p>Would you like to subscribe to our email newsletter?</p> </div> 
+        <div class="modal-buttons"> 
+        <button>Ok</button> 
+        <button>Cancel</button> 
+        </div> 
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit quibusdam saepe perferendis, nesciunt ex sit, at vitae nostrum temporibus facere aspernatur animi, laborum consequuntur rem. Accusamus at natus ipsam ullam?
+    Nemo reiciendis deleniti quasi autem esse aspernatur ullam amet voluptatem, minus vel vitae reprehenderit architecto neque expedita, harum itaque perspiciatis possimus et quo aut recusandae facere laboriosam. Beatae, rem libero.
+    Voluptas, omnis. Molestias dolorum facilis eveniet consequatur molestiae, dignissimos nisi nihil aliquid, quasi iste repudiandae sint. Inventore soluta vero molestias dolorem, dicta, deleniti ad cum laboriosam aliquid expedita cumque sapiente.
+    Accusantium ad vero eligendi? Eligendi facere illum ipsum, odio similique assumenda quibusdam reprehenderit rerum qui quo iste quia ut repudiandae itaque dolor delectus. Doloremque, reprehenderit iure? Asperiores rerum labore quia!
+    Ratione, placeat, voluptatem aspernatur quam esse vitae nostrum fugiat iusto et animi ex eveniet nobis asperiores optio inventore perferendis hic quaerat sit exercitationem temporibus ea, illo libero tempora harum? Culpa.</p>
+
+</body>
+</html>

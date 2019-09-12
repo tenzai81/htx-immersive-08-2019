@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style> 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu {
+  background-color: #5995DA;
+  height: 80px;
+}
+
+.header {
+  background-color: #B2D6FF;
+  font-size: 70px;
+  border-bottom: solid black
+  width: 400px;
+  
+}
+
+.content {
+  background-color: #EAEDF0;
+  height: 600px;
+  font-size: 50px;
+  border-bottom: solid black
+}
+
+.content2 {
+  background-color: #D6E9FE;
+  border-bottom: solid black
+}
+
+.footer {
+  background-color: #F5CF8E;
+  height: 100px;
+  width: 400px;
+}
+.responsive {
+  max-width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+ul {
+        list-style-type: none;
+        margin: 0;
+      }
+      .menu {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .menu > li {
+        margin-right: 10px;
+        text-decoration: none;
+      }
+      .menu > li:last-child {
+        margin-right: 0;
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .content2,
+  .footer, {
+    width: 50%;
+  }
+  .navigation {
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none;
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .feature-1,{
+    width: 33.3%;
+  }
+  .header {
+    height: 300px;
+    font-size: 43px;
+  }
+  .content2 {
+  height: 200px;
+  order: 1;
+}
+.content {
+  order: 2;
+}
+.navigation {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+}
+</style>
+<body>
+    <nav class="navigation">
+     
+      <ul class="menu">
+        <a href="www.yahoo.com" class="title">Company Name</a>
+        <li><a href="www.yahoo.com">Home</a></li>
+        <li><a href="www.yahoo.com">Products</a></li>
+        <li><a href="www.yahoo.com">Company</a></li>
+        <li><a href="www.yahoo.com">Blog</a></li>
+      </ul>
+    </nav>
+             <div class='section header'>
+                  We Are Awesome
+                </div>
+                    <div class='section content'>
+                    <ul>  Boldness1
+                        <li>we are cool1</li>
+                        <li>we are cool1</li>
+                        <li>we are cool1</li>
+                        <li>we are cool1</li>
+
+                        </ul>
+                    <ul>  Boldness2
+                        <li>We are number 1</li>
+                        <li>We are number 1</li>
+                        <li>We are number 1</li>
+                        <li>We are number 1</li>
+
+                        </ul>
+                        <ul>Boldness3
+                        <li>We are number 2</li>
+                        <li>We are number 2</li>
+                        <li>We are number 2</li>
+                        <li>We are number 2</li>
+
+                        </ul>
+                    </div>
+                    <div class='section content2'>
+                  <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2018/09/10222609/shiba-inu-funny-close-up-portrait.jpg" class="responsive">
+                  <img src="http://cdn.akc.org/content/article-body-image/funny-basset_hound_yawning.jpg" class="responsive">      
+                  </div>
+                <div class='footer'>
+                  Footer
+                </div>
+              </div>
+</body>
+</html>
