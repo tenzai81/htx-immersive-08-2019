@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+        height: 100px;
+        background-color: gray;
+    }
+.content{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    width: 100%;
+    height: 450px;
+    background-color: rgb(187, 32, 218)
+}
+.content2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    width: 100%;
+    height: 450px;
+    background-color: rgb(134, 125, 221)
+}
+.content3{ 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    width: 100%;
+    height: 450px;
+    background-color: rgb(241, 30, 111)
+
+}
+.footer{
+    height: 100px;
+    background-color: rgb(187, 211, 168); 
+}
+.navigation{
+    display:flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+         }
+     li {
+         display:flex;
+         justify-content: flex-end;
+     }
+   /* Mobile Styles */
+ @media only screen and (max-width: 400px) {
+  .header{
+      display: none;}
+   */
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+    }
+/* Tablets */
+@media only screen and (min-width: 401px) and (max-width: 960px)
+{.content .footer .header, .content2
+{
+   height: 450px;
+}
+}
+</style>
+<body>
+    <div class="navigation">
+        <ul>Our Company
+            <li>Home</li>
+            <li>Products</li>
+            <li>About</li>
+            <li>Blog</li>
+        </ul>
+    </div>
+<div class="header">Header</div>
+<div class="content">We Are Awesome!</div>
+<div class="content2">Awesomeness</div>
+<div class="content3">Yay it's almost friday</div>
+<div class="footer">Footer</div>
+</body>
+</html>
