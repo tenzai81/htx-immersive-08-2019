@@ -21,8 +21,10 @@
 <label id="dealer-points" class="points"></label>
 
 <div id="dealer-hand" class="hand">
-    <img src="images/ace_of_diamonds.png">
+    <!-- <img src="images/ace_of_diamonds.png">
     <img src="images/ace_of_hearts.png">
+    <img src="images/jack_of_diamonds.png">
+    <img src="images/king_of_clubs.png"> -->
 </div>
 
 <label><b>Player</b>: </label>
@@ -30,16 +32,14 @@
 <label id="player-points" class="points"></label>
 
 <div id="player-hand" class="hand">
-    <img src="images/ace_of_spades2.png">
-    <img src="images/jack_of_clubs.png">
 </div>
 
 <div class="buttons">
 
-    <button type="button" class="btn btn-secondary">Deal</button>
-    <button type="button" class="btn btn-secondary">Hit</button>
-    <button type="button" class="btn btn-secondary">Stand</button>
-    <button type="button" class="btn btn-secondary">Play Again</button>
+    <button onClick='dealCards()' id="deal-button" type="button" class="btn btn-secondary">Deal</button>
+    <button id="hit-button" type="button" class="btn btn-secondary">Hit</button>
+    <button id="stand-button" type="button" class="btn btn-secondary">Stand</button>
+    <button id="playagain-button" type="button" class="btn btn-secondary">Play Again</button>
 </div>
 
 </div>

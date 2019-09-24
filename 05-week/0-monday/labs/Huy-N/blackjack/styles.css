@@ -36,3 +36,9 @@ text-align: center;
     display: block;
     float: left;
     margin-left: 5px;
+}
+#deal-button img {
+    width: 65px;
+    height: 65px;
+  
+}
