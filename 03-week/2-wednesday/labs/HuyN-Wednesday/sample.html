@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style> 
+header {
+	padding-top: 60px;
+  position: relative;
+  border-top: 2px solid $blue;
+}
+
+.cassia-logo {
+	width: 287px;
+	padding-bottom: 10px;
+}
+
+.cassia-nav {
+  padding: 0 15px;
+	display: none;
+
+  .navbar-nav>li {
+  	float: none;
+  }
+}
+
+.navbar-nav>li>a,
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus {
+	text-transform: uppercase;
+	font-family: 'Futura W01 Heavy';
+	display: inline-block;
+	letter-spacing: 1px;
+	font-size: 13px;
+	z-index: 9;
+	background: none;
+	position: relative;
+	white-space: nowrap;
+}
+
+.navbar-nav {
+	max-width: 900px;
+	margin: 0 auto;
+	float: none;
+}
+
+@media (min-width: 769px) {
+  nav.sticky {
+  	position: fixed;
+  	top: 0;
+  	background: $light;
+  	border-bottom: 2px solid $blue;
+  	left: 0;
+  	z-index: 9;
+  	width: 100%;
+  	border-left: 2px solid $blue;
+  	border-right: 2px solid $blue;
+  }
+}
+
+// Subheader
+.cassia-info {
+  padding: 5px 20px;
+  border-bottom: 2px solid $blue;
+  border-top: 2px solid $blue;
+  text-align: center;
+  z-index: 9;
+  position: relative;
+
+  p {
+    margin: 0 auto;
+  }
+}
+
+.hours {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	text-align: right;
+
+  p {
+    line-height: 1.4;
+  }
+}
+
+
+@media (max-width: 1024px) {
+
+  .border-top {
+    display: none;
+  }
+
+  .banner {
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background: $light;
+    z-index: 999;
+    border-top: 2px solid $blue;
+    border-left: 2px solid $blue;
+    border-right: 2px solid $blue;
+
+    .navbar-brand {
+      width: 140px;
+      height: 45px;
+      margin: 0 auto 5px 0;
+    }
+  }
+
+  .hamburger-menu {
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    right: 30px;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .bar, .bar:after, .bar:before {
+      width: 26px;
+      height: 2px;
+  }
+  .bar {
+      position: relative;
+      transform: translateY(25px);
+      background: $blue;
+      transition: all 0ms 300ms;
+  }
+  .bar.animate {
+      background: rgba(255, 255, 255, 0);
+  }
+  .bar:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 7px;
+      background: $blue;
+      transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .bar:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      background: $blue;
+      transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .bar.animate:after {
+      top: 0;
+      transform: rotate(45deg);
+      transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .bar.animate:before {
+      bottom: 0;
+      transform: rotate(-45deg);
+      transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .navbar-brand {
+    float: left;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px;
+    background: url(../images/Cassia_logo.png) no-repeat center;
+    background-size: contain;
+    width: 140px;
+    margin-left: 15px;
+    position: relative;
+    z-index: 99;
+  }
+
+  .navbar-nav {
+    height: 100vh;
+    padding-top: 20px;
+  }
+
+  .navbar-collapse {
+    border-top: 2px solid $blue;
+  }
+
+  .navbar-nav>li {
+    float: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .cassia-nav {
+    height: 0;
+    overflow: hidden;
+
+    &.active {
+      height: 100%;
+    }
+  }
+
+  .cassia-info {
+    padding: 5px 0;
+    p {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    span {
+      display: block;
+    }
+  }
+}
+
+.callout {
+  padding: 30px 20px;
+	background: $blue url(../images/blue-stripes.png) repeat;
+	background-size: 175px;
+  color: #fff;
+  z-index: 999;
+  position: relative;
+
+	&-container {
+		max-width: 1080px;
+    margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	h2 {
+		color: #fff;
+		margin: 12px auto 0;
+	}
+
+	.date {
+		border-left: 1px solid #fff;
+    padding: 0 10px;
+    border-right: 1px solid #fff;
+    text-align: center;
+	}
+
+	.link {
+		font-size: 18px;
+		display: inline-block;
+	}
+
+	.date h7,
+	.link {
+		font-family: Georgia,Times,Times New Roman,serif;
+    line-height: 32px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 400;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+	}
+
+	.date h7 {
+		font-size: 28px;
+    letter-spacing: 0;
+		color: #fff;
+	}
+}
+
+@media (max-width: 1024px) {
+	.callout {
+		margin-top: 100px;
+		padding: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.callout {
+		margin-top: 90px;
+		padding: 20px;
+
+		h2 {
+			margin: 0 auto 10px;
+	    font-size: 18px;
+	    text-align: center;
+	    letter-spacing: 0.07em;
+		}
+	}
+}
+
+</style>
+</head>
+
+<body>
+    
+</body>
+</html>

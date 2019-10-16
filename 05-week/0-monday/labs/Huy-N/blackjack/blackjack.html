@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+<!-- <script src="jquery-3.4.1.js"></script> -->
 </head>
 <body>
  
@@ -37,8 +37,8 @@
 <div class="buttons">
 
     <button onClick='dealCards()' id="deal-button" type="button" class="btn btn-secondary">Deal</button>
-    <button id="hit-button" type="button" class="btn btn-secondary">Hit</button>
-    <button id="stand-button" type="button" class="btn btn-secondary">Stand</button>
+    <button onClick="addCard()" id="hit-button" type="button" class="btn btn-secondary">Hit</button>
+    <button onClick="showResults()" id="stand-button" type="button" class="btn btn-secondary">Stand</button>
     <button id="playagain-button" type="button" class="btn btn-secondary">Play Again</button>
 </div>
 
